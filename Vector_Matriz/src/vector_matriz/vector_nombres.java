@@ -24,7 +24,7 @@ public class vector_nombres {
         int i;
         
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese por favor los nombres de losintegrantes de su equipo");
+        System.out.println("Ingrese por favor los nombres de losi ntegrantes de su equipo");
         
         for (i = 0; i < equipo.length; i++) { // FOR para asignar valores al vector por teclado de tipo carácter
             System.out.println("Integrante nro "+i);
