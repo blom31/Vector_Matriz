@@ -18,16 +18,18 @@ public class vector_nombres {
     public static void main(String[] args) {
         
 //declaracion del vector  de tipo String
-      String [] equipo = new String [5]; 
+      
+        String [] equipo = new String [3]; /*vector tipo cadena*/
         
         String nombre;
         int i;
         
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese por favor los nombres de losi ntegrantes de su equipo");
+        System.out.println("Ingrese por favor los nombres de los integrantes de su equipo");
         
         for (i = 0; i < equipo.length; i++) { // FOR para asignar valores al vector por teclado de tipo carácter
-            System.out.println("Integrante nro "+i);
+            
+            System.out.println("Integrante");
             nombre = leer.next();
             equipo [i] = nombre;            
         }
