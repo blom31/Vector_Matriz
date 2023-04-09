@@ -21,8 +21,8 @@ public class Vector_Matriz {
        
         /*(int) (Math.random()*10)*/
         for ( i = 0; i < 5; i++) { //  FOR para rellenar un vector
-            vector [i] = 
-        }   
+            vector [i] = (int) (Math.random()*10);
+        }
         System.out.println("Impresión de un vector con dimensión 5 relleno de forma aleatoria");  
         
         for (i = 0; i < 5; i++) { //FOR para mostrar un vector

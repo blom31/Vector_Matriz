@@ -24,21 +24,24 @@ public class vector_ejer_3 {
         }
         for (i = 0; i < vector.length; i++) {
             num = Integer.toString(vector[i]);
-            if (num.length() == 1) {
-                cont1++;
-
-            } else if (num.length() == 2) {
-                cont2++;
-
-            } else if (num.length() == 3) {
-                cont3++;
-
-            } else if (num.length() == 4) {
-                cont4++;
-
-            } else if (num.length() == 5) {
-                cont5++;
-
+            switch (num.length()) {
+                case 1:
+                    cont1++;
+                    break;
+                case 2:
+                    cont2++;
+                    break;
+                case 3:
+                    cont3++;
+                    break;
+                case 4:
+                    cont4++;
+                    break;
+                case 5:
+                    cont5++;
+                    break;
+                default:
+                    break;
             }
         }
         System.out.println("Hay " + cont1 + " elementos con 1 digito");
