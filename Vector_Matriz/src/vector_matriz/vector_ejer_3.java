@@ -15,14 +15,38 @@ public class vector_ejer_3 {
      */
     public static void main(String[] args) {
         int[] vector = new int[5];
-        int i, cont1, cont2, cont3, cont4, cont5;
-        
-        for (i = 0; i < 5; i++) { //  FOR para rellenar un vector
-            vector[i] = (int) (Math.random() * 9999+1);
-        
+        int i, cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
+        String num;
+
+        for (i = 0; i < vector.length; i++) { //  FOR para rellenar un vector
+            vector[i] = (int) (Math.random() * 9999 + 1);
+            System.out.println("[" + vector[i] + "]");
+        }
+        for (i = 0; i < vector.length; i++) {
+            num = Integer.toString(vector[i]);
+            if (num.length() == 1) {
+                cont1++;
+
+            } else if (num.length() == 2) {
+                cont2++;
+
+            } else if (num.length() == 3) {
+                cont3++;
+
+            } else if (num.length() == 4) {
+                cont4++;
+
+            } else if (num.length() == 5) {
+                cont5++;
+
+            }
+        }
+        System.out.println("Hay " + cont1 + " elementos con 1 digito");
+        System.out.println("Hay " + cont2 + " elementos con 2 digitos");
+        System.out.println("Hay " + cont3 + " elementos con 3 digitos");
+        System.out.println("Hay " + cont4 + " elementos con 4 digitos");
+        System.out.println("Hay " + cont5 + " elementos con 5 digitos");
     }
-    
-}
 }
 
 /*int[] vector = new int[10];
@@ -53,7 +77,7 @@ public class vector_ejer_3 {
         System.out.println("Hay "+cont5+" numeros con 5 digito.");
     }*/
 
-/*int[] vector = new int[10];
+ /*int[] vector = new int[10];
         int cont1=0, cont2=0, cont3=0, cont4=0, cont5=0;
         
         for (int i = 0; i < 10; i++) {
